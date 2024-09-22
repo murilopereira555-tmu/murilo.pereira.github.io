@@ -1,0 +1,106 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #c4e8f1;
+    color: #004e82; 
+    margin: 15pt;
+  }
+  
+
+
+  /* Heading Styles */
+  h1 {
+    font-size: 36pt;
+    color: #003686;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 30pt;
+    color: #3d4b8b;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 24pt;
+    color: #5a62cd; 
+    font-weight: normal;
+  }
+  
+
+
+  /* Paragraph Styles */
+  p {
+    font-family: "Times New Roman", serif;
+    font-size: 14pt;
+    color: #242136; 
+    line-height: 1.5;
+  }
+  
+
+  
+  /* Link Styles */
+  a:link, a:visited {
+    color: #c436a5; 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff4500; 
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #228b22;
+    text-decoration: underline;
+  }
+  
+
+
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #4b0082; 
+    color: white;
+  }
+
+  button {
+    color: #4c00ff;
+    background-color: #c436a5;
+  }
+  
+  /* Div Styles for Organization */
+  .div-text, .div-links {
+    width: 48%;
+  }
+  
+  
+  
+  /* Link Layout Table */
+  .table-links {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .table-links td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #360c97;
+  }
+  
+  .table-links th {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+  }
+  
