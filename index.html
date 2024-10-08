@@ -5,101 +5,44 @@
     <title>Murilo's Profile</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
 </head>
 
 <body>
+
   <h1>Murilo's Profile</h1>
-  <img src="https://media.licdn.com/dms/image/v2/D5603AQFNm_A77PZh0w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1680680808569?e=1731542400&v=beta&t=n7Y8Fm1KUxhXjI-coX0tXKC082bOmLE2q5feP_YyRHo">
+
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">More</a>
+        <div class="dropdown-content" id="dropdown-content">
+          <a href="contact.html">Contact</a>
+          <a href="Pereira_Murilo_Resume_Cyber.pdf">Resume</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <br>
+
+  <button onclick="name_prompt()">Input your Name</button>
+  <br>
+  <br>
+  <img src="profile_pic.jfif" id="profile_pic" onclick="enlarge()">
   <br>
   <a href="https://www.linkedin.com/in/murilo-pereira-it/">
     LinkedIn Profile
   </a>
-  <p>This is a sample paragraph to differentiate the style's with the "Style.css" file for a paragraph element.</p>
-  <h2>Education</h2>
-  <ol>
-    <li>
-        <b>Sacred Heart</b>
-        <br>
-        High School: 2016-2020
-    </li>
-    <br>
-    <li>
-        <b>Toronto Metropolitan University</b>
-        <br>
-        Post Secondary: 2020-2025 <i>(Ongoing)</i>
-    </li>
-  </ol>
-  <br>
-  <hr>
+  <p id="user_name">Your Name will appear Here!</p>
+ 
+ 
+ 
   
-  <h2>University Details</h2>
-  
-  <div id="div-text">
-    <dl>
-      <dt>
-          <b>Program:</b>
-      </dt>
-      <dd>
-          <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">Business Technology Management</a>
-      </dd>
-      <dd>
-          <i>With a Minor in Philosophy</i>
-      </dd>
-      <br>
-      <dt>
-          <b>Description:</b>
-      </dt>
-      <dd>
-          The BTM Program blends IT and Management acumen to build integrated skills for those seeking a career in tech.
-      </dd>
-      <br>
-      <div id="div-links">
-
-        <dt>
-          <b>Courses:</b>
-        </dt>
-        <dd>Here are some courses I'm taking this semester!
-
-          <table id="table-links">
-            <tr>
-              <th>Course</th>
-              <th>Name</th>
-              <th>Link</th>
-            </tr>
-            <tr>
-              <td><b>ITM780</b></td>
-              <td>Web Design and Management</td>
-              <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/780/">More info on this course.</a></td>
-            </tr>
-            <tr>
-              <td><b>ITM618</b></td>
-              <td>Business Intelligence and Analytics</td>
-              <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/618/">More info on this course.</a></td>
-            </tr>
-            <tr>
-              <td><b>ITM707</b></td>
-              <td>Strategy, Management, and Acquisition</td>
-              <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/information-technology-management/ITM/707/">More info on this course.</a></td>
-            </tr>
-            <tr>
-              <td><b>PHL550</b></td>
-              <td>Knowledge, Truth, and Belief</td>
-              <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/philosophy/PHL/550/">More info on this course.</a></td>
-            </tr>
-            <tr>
-              <td><b>PHL551</b></td>
-              <td>Metaphysics</td>
-              <td><a href="https://www.torontomu.ca/calendar/2024-2025/courses/philosophy/PHL/551/">More info on this course.</a></td>
-            </tr>
-          </table>
-        </dd>
-
-      </div>
-      
-      
-  
-    </dl>
-  </div>
   
   <br>
   <hr>
