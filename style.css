@@ -46,9 +46,9 @@ body {
   /* Paragraph Styles */
   p {
     font-family: "Times New Roman", serif;
-    font-size: 14pt;
+    font-size: 12pt;
     color: #242136; 
-    line-height: 1.5;
+    line-height: 1;
   }
   
 
@@ -142,8 +142,6 @@ nav a:hover {
 color: #f1f1f1;
 }
 
-/* Dropdown Button */
-
 
 #nav-menu {
   list-style-type: none;
@@ -190,6 +188,12 @@ color: #f1f1f1;
   background-color: #f1f1f1;
 }
 
+
+
+/*/////////////////////////////
+Following was used for Lab 6 //
+////////////////////////////*/
+
 /* Form container */
 .form-container {
   background-color: #fff;
@@ -200,12 +204,14 @@ color: #f1f1f1;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* For label elements used on forms*/
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
+/* For the text input form elements*/
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -217,11 +223,17 @@ textarea {
   border-radius: 5px;
 }
 
+select{
+  margin-bottom: 20px; /* Adding a luttle bit of marging to the bottom of dropdown select to space the form better*/
+}
+
+/* For radio button and checkbox*/
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 10px;
 }
 
+/* For butons */
 .buttons {
   text-align: center;
 }

@@ -6,12 +6,14 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script src="form.js"></script> <!-- uses the form.js file created for lab 6 -->
 
 </head>
 <body>
 
     <h1>Murilo's Profile</h1>
 
+    <!-- Navigation bar -->
     <nav>
         <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
@@ -26,8 +28,15 @@
           </li>
         </ul>
       </nav>
-      <div class="form-container">
-        <h2>Contact Us</h2>
+
+    <!-- Main additions for Lab 6 -->
+    
+      <!-- Div for my contact form-->
+    <div class="form-container">
+
+        <h2>Contact Form</h2> <!-- Heading for the form -->
+
+        <!-- Form start with the ID for css and js -->
         <form id="contactForm">
     
             <!-- Name (Single text field) -->
@@ -42,23 +51,26 @@
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
     
-            <!-- Gender (Radio buttons) -->
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="Other">
-            <label for="other">Other</label>
-    
-            <!-- Interests (Checkboxes) -->
-            <label>Interests:</label>
-            <input type="checkbox" id="webDesign" name="interests" value="Web Design">
-            <label for="webDesign">Web Design</label>
-            <input type="checkbox" id="graphicDesign" name="interests" value="Graphic Design">
-            <label for="graphicDesign">Graphic Design</label>
-            <input type="checkbox" id="programming" name="interests" value="Programming">
-            <label for="programming">Programming</label>
+            <!-- Request Urgency (Radio buttons) -->
+            <label>Request Urgency</label>
+              <p><input type="radio" id="urgent" name="urgency" value="Urgent">Urgent</p>
+              <p><input type="radio" id="non-urgent" name="urgency" value="Non-urgent">Non-urgent</p>
+
+            <!-- Request Type (Dropdown Select)-->
+              <label>Request Type</label>
+              <select name="requestType">
+                <option value="question">Question</option>
+                <option value="recomendation">Recomendation</option>
+                <option value="interview">Interview Request</option>
+                <option value="coffeeChat">Coffee Chat</option>
+              </select>
+
+            <!-- Interests (Multi-select Checkboxes) -->
+            <label>Subjects of Interest:</label>
+            <p><input type="checkbox" id="webDesign" name="interests" value="Web Design">Web Design</p>
+            <p><input type="checkbox" id="productManagement" name="interests" value="Graphic Design">Product Management</p>
+            <p><input type="checkbox" id="cyber" name="interests" value="Programming">Cyber Security</p>
+            <p><input type="checkbox" id="esports" name="interests" value="Esports">Esports</p>
     
             <!-- Message (Multiple text field) -->
             <label for="message">Message:</label>
