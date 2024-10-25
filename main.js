@@ -38,3 +38,32 @@ window.onclick = function(event) {
         }
     }
 }
+
+function submitForm() {
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+    const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(i => i.value);
+    const message = document.getElementById('message').value;
+
+    // Create an object to store form data
+    const formData = {
+        name,
+        email,
+        phone,
+        gender,
+        interests,
+        message
+    };
+
+    // Store form data in localStorage
+    localStorage.setItem('contactFormData', JSON.stringify(formData));
+    
+    // Notify the user
+    alert('Form submitted successfully! Data has been saved to local storage.');
+    
+    // Clear form fields
+    document.getElementById('contactForm').reset();
+}

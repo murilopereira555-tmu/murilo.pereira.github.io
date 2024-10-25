@@ -26,7 +26,52 @@
           </li>
         </ul>
       </nav>
-
+      <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+    
+            <!-- Name (Single text field) -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+            <!-- Email (Single text field) -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <!-- Phone (Single text field) -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+            <!-- Gender (Radio buttons) -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+    
+            <!-- Interests (Checkboxes) -->
+            <label>Interests:</label>
+            <input type="checkbox" id="webDesign" name="interests" value="Web Design">
+            <label for="webDesign">Web Design</label>
+            <input type="checkbox" id="graphicDesign" name="interests" value="Graphic Design">
+            <label for="graphicDesign">Graphic Design</label>
+            <input type="checkbox" id="programming" name="interests" value="Programming">
+            <label for="programming">Programming</label>
+    
+            <!-- Message (Multiple text field) -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message here..."></textarea>
+    
+            <!-- Submit and Clear buttons -->
+            <div class="buttons">
+                <button type="button" onclick="submitForm()">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+    
+        </form>
+      </div>
 
     <h2>Phone Number</h2>
     <p>613 986 5634</p>
