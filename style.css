@@ -41,8 +41,6 @@ body {
     font-weight: normal;
   }
   
-
-
   /* Paragraph Styles */
   p {
     font-family: "Times New Roman", serif;
@@ -50,8 +48,6 @@ body {
     color: #242136; 
     line-height: 1;
   }
-  
-
   
   /* Link Styles */
   a:link, a:visited {
